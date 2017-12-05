@@ -14,6 +14,8 @@
 ### References
 * [Flexbox reference](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   * I used flexbox in this project and to understand properties I used this site.
+  * [Email tag](https://www.w3schools.com/tags/tag_address.asp)
+    * Research how to handle email addresses.
 
 ### jQuery plugins
 * [1]()
