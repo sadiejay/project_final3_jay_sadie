@@ -16,14 +16,14 @@
   * I used flexbox in this project and to understand properties I used this site.
 
 ### jQuery plugins
-* [1](http://mds.sh/readable/)
+* [1]()
   * This plugin
-* [2](https://github.com/garand/sticky)
+* [2]()
   * This plugin
 
 
 ### Notes
-* 
+*
 
 
 # project_final3_jay_sadie
