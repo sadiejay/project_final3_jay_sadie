@@ -27,6 +27,7 @@ font-family: 'Short Stack', cursive;
     /*padding: 0 0.75rem;*/
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -34,6 +35,12 @@ h5,
 h6,
 p, {
     color: #333338;
+}
+
+h1,
+h2,
+h3 {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 h2 {
@@ -47,8 +54,8 @@ h3 {
 
 img {
   object-fit: cover;
-  width: 30%;
-  height: 20;
+  width: 65vw;
+  height: 20%;
 }
 
 
@@ -97,10 +104,15 @@ nav ul li a:active {
     color: #1A1922;
 }
 
+nav ul li a:hover {
+  border-bottom: white solid 2px;
+}
+
+
                                 /* header */
 header,
-.about,
-.classes,
+.about__section,
+.classes__section,
 footer {
     display: flex;
     flex-direction: column;
@@ -113,6 +125,10 @@ footer {
 
 header {
     background-color: #db5461;
+    background-image: url("../img/yoga-pose-mural.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 header h3 {
@@ -120,10 +136,14 @@ header h3 {
     font-family: 'Short Stack', cursive;
 }
 
-header.header__img {
-    order: -99999;
+.about__img,
+.classes__img {
+    text-align: center;
 }
 
+.classes__section {
+  background-color: #E3F2FD;
+}
 
                                   /* footer */
 .mask {
