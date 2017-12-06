@@ -78,7 +78,10 @@ nav ul li a:active {
     color: #1A1922;
 }
 
-header {
+header,
+.about,
+.classes,
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
