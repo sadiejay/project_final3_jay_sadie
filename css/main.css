@@ -99,3 +99,71 @@ header h3 {
 header.header__img {
     order: -99999;
 }
+
+
+/* footer */
+.mask {
+    background: #db5461;
+    width: 100px;
+    height: 100px;
+}
+
+.mask a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.fb--mask {
+    -webkit-mask: url("../img/fb.svg") center center no-repeat;
+    mask: url("../img/fb.svg") center center no-repeat;
+    z-index: 4;
+    position: relative;
+    display: inline-block;
+}
+
+.fb--mask a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.insta--mask {
+    -webkit-mask: url("../img/insta.svg") center center no-repeat;
+    mask: url("../img/insta.svg") center center no-repeat;
+    z-index: 4;
+    position: relative;
+    display: inline-block;
+}
+
+.insta--mask a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.yt--mask {
+    -webkit-mask: url("../img/yt.svg") center center no-repeat;
+    mask: url("../img/yt.svg") center center no-repeat;
+    z-index: 4;
+    position: relative;
+    display: inline-block;
+}
+
+.yt--mask a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
