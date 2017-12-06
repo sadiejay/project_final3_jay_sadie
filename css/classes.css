@@ -1,0 +1,199 @@
+:root {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    /*padding: 0 0.75rem;*/
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p, {
+    color: #333338;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3,
+h5,
+.h5 {
+    font-family: 'Short Stack', cursive;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #8AA29E;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+h5,
+.h5 {
+  font-size: 1.2rem;
+
+}
+
+img {
+  object-fit: cover;
+  width: 30%;
+  height: 20;
+}
+
+
+                        /* nav */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #db5461;
+    border-bottom: #333 solid 2px;
+    padding: 0 0.5rem;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+    display: inline;
+}
+
+nav.nav__logo {
+    display: inline;
+    text-align: left;
+}
+
+nav ul {
+    color: #1A1922;
+}
+
+nav ul li {
+    padding: 1rem 0.5rem;
+    font-size: 1.1rem;
+    color: #1A1922;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #1A1922;
+}
+
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:active {
+    text-decoration: none;
+    color: #1A1922;
+}
+
+header,
+.about,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50vh;
+    padding: 1rem 0.5rem;
+}
+
+header {
+    background-color: #db5461;
+    background-image: url("../img/yoga-group.jpg");
+}
+
+header h3 {
+    font-size: 1.4rem;
+    font-family: 'Short Stack', cursive;
+}
+
+header.header__img {
+    order: -99999;
+}
+
+
+                                  /* footer */
+.mask {
+    background: #db5461;
+    width: 100px;
+    height: 100px;
+}
+
+.mask a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.fb--mask {
+    -webkit-mask: url("../img/fb.svg") center center no-repeat;
+    mask: url("../img/fb.svg") center center no-repeat;
+    z-index: 4;
+    position: relative;
+    display: inline-block;
+}
+
+.fb--mask a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.insta--mask {
+    -webkit-mask: url("../img/insta.svg") center center no-repeat;
+    mask: url("../img/insta.svg") center center no-repeat;
+    z-index: 4;
+    position: relative;
+    display: inline-block;
+}
+
+.insta--mask a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.yt--mask {
+    -webkit-mask: url("../img/yt.svg") center center no-repeat;
+    mask: url("../img/yt.svg") center center no-repeat;
+    z-index: 4;
+    position: relative;
+    display: inline-block;
+}
+
+.yt--mask a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
