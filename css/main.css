@@ -23,7 +23,17 @@ font-family: 'Short Stack', cursive;
 }
 
 .container{
-  width: 90%
+    width: 100vw;
+    /*padding: 0 0.75rem;*/
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p, {
+    color: #333338;
 }
 
 h2 {
@@ -35,12 +45,21 @@ h3 {
     font-family: 'Short Stack', cursive;
 }
 
+img {
+  object-fit: cover;
+  width: 30%;
+  height: 20;
+}
+
+
+                        /* nav */
 nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    background-color: #db5461;
     border-bottom: #333 solid 2px;
     padding: 0 0.5rem;
 }
@@ -78,6 +97,7 @@ nav ul li a:active {
     color: #1A1922;
 }
 
+                                /* header */
 header,
 .about,
 .classes,
@@ -91,6 +111,10 @@ footer {
     padding: 1rem 0.5rem;
 }
 
+header {
+    background-color: #db5461;
+}
+
 header h3 {
     font-size: 1.4rem;
     font-family: 'Short Stack', cursive;
@@ -101,7 +125,7 @@ header.header__img {
 }
 
 
-/* footer */
+                                  /* footer */
 .mask {
     background: #db5461;
     width: 100px;
