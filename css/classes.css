@@ -133,9 +133,6 @@ header h3 {
     font-family: 'Short Stack', cursive;
 }
 
-header.header__img {
-    order: -99999;
-}
 
 .classes__section ul li,
 .classes__section p{
@@ -146,6 +143,20 @@ header.header__img {
 .classes__section ul li {
   list-style: none;
   text-decoration: none;
+}
+
+.res__section,
+.group__i,
+.private__i {
+    padding: 1rem 0.5rem;
+}
+.res__section {
+  background-color: #E3F2FD;
+}
+
+.private__img,
+.group__img {
+  text-align: center;
 }
 
                                   /* footer */
@@ -159,14 +170,7 @@ footer {
     height: 50vh;
     padding: 1rem 0.5rem;
 }
-.res__section,
-.group__i,
-.private__i {
-    padding: 1rem 0.5rem;
-}
-.res__section {
-  background-color: #E3F2FD;
-}
+
 .mask {
     background: #db5461;
     width: 100px;
