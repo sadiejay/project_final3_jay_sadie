@@ -63,3 +63,10 @@ nav ul li a:active {
     text-decoration: none;
     color: #1A1922;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
