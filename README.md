@@ -39,7 +39,7 @@
 
 ### Notes
 * I reviewed the list of deductions for this project and in the syllabus.
-* I wanted the background opactiy to change but I couldn't figure that out and settled on having the headers change.
+* I wanted the background opacity to change but I couldn't figure that out and settled on having the headers change.
 * I couldn't figure out how to make everything neatly appear on the page at bigger sizes, especially with the photos getting blown up despite calling a max-width and height.
 
 
