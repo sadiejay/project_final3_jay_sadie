@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="css/animsition.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
 </head>
 <body>
 
@@ -28,7 +31,6 @@
            <li><a class="animsition-link" href="index.html">home</a></li>
            <li><a class="animsition-link" href="about.html">about</a></li>
            <li><a class="animsition-link" href="classes.html">classes</a></li>
-           <li><a class="animsition-link" href="contact.html">contact</a></li>
         </ul>
 
       </div><!-- nav links -->
@@ -38,7 +40,7 @@
     <main>
 
       <!-- header -->
-      <header class="home">
+      <header class="backstretch">
 
 
         <div class="header__text">
@@ -53,70 +55,77 @@
 
       <!-- about -->
 
-      <section class="about__section">
-
+      <div class="about__wrapper">
         <h2 class="title">About</h2>
 
-        <div class="about__img">
-          <img src="img/yoga-group4.jpg" alt="yoga class in session">
-        </div>
+        <section class="about__section">
 
-        <div class="about__text">
-          <h3>About Yoga Kandy</h3>
-          <p>
-            Cupcake ipsum dolor sit amet lollipop jujubes gummies. Cake bear claw pudding pudding biscuit cotton candy sugar plum pastry.
+          <div class="about__img">
+            <img src="img/yoga-group4.jpg" alt="yoga class in session">
+          </div>
 
-            Tiramisu jelly-o cupcake candy canes bonbon macaroon dessert jelly beans. Sesame snaps cotton candy macaroon chupa chups croissant topping. Cake ice cream ice cream pie sweet bear claw donut danish. Cheesecake pastry tiramisu. Cupcake tootsie roll donut donut icing.
-          </p>
-        </div>
+          <div class="about__text">
+            <h3>About Yoga Kandy</h3>
+            <p>
+              Cupcake ipsum dolor sit amet lollipop jujubes gummies. Cake bear claw pudding pudding biscuit cotton candy sugar plum pastry.
 
-      </section><!-- /about-->
+              Tiramisu jelly-o cupcake candy canes bonbon macaroon dessert jelly beans. Sesame snaps cotton candy macaroon chupa chups croissant topping. Cake ice cream ice cream pie sweet bear claw donut danish. Cheesecake pastry tiramisu. Cupcake tootsie roll donut donut icing.
+            </p>
+          </div>
+
+        </section><!-- /about-->
+      </div>
 
       <!-- classes -->
-
-      <section class="classes__section">
-
+      <div class="classes__wrapper">
         <h2 class="title">Classes</h2>
 
-        <div class="classes__img">
-          <img src="img/package.jpg" alt="current packages photo">
-        </div>
+        <section class="classes__section">
 
-        <div class="classes__text">
-          <h3>View our current packages</h3>
-        </div>
-        <button href="classes.html" target="_blank" rel="noopener" class="button button__join">packages</button>
+          <div class="classes__img" id="img--js">
+            <img src="img/package.jpg" alt="current packages photo">
+          </div>
 
-      </section><!-- /classes-->
+          <div class="classes__text">
+            <h3>View our current packages</h3>
+          </div>
+          <button href="classes.html" target="_blank" rel="noopener" class="button button__join">packages</button>
+
+        </section><!-- /classes-->
+      </div>
 
     </main>
 
     <!-- footer -->
-    <footer class="contact__section">
+    <footer class="contact__wrapper">
 
       <h2 class="title">Contact</h2>
 
-      <!--  cobtact info -->
+      <div class="contact__section">
 
-      <div class="footer contact__text">
+        <!--  contact info -->
 
-        <div class="contact__address"> Address: 1800 Industrial Road, #130-L
-          Las Vegas, Nevada  89102</div>
+        <div class="footer contact__text">
 
-        <div class="contact__phone">Phone number: 702-772-6025</div>
+          <div class="contact__address"> Address: 1800 Industrial Road, #130-L
+            Las Vegas, Nevada  89102</div>
 
-        <div class="contact__email">E-mail:<a href= "mailto:yogawithkatricia@outlook.com">yogawithkatricia@outlook.com</a></div>
+          <div class="contact__phone">Phone number: 702-772-6025</div>
+
+          <div class="contact__email">E-mail:<a href= "mailto:yogawithkatricia@outlook.com">yogawithkatricia@outlook.com</a></div>
+
+        </div>
+
+        <!--  sm -->
+
+        <div class="footer contact__sm">
+          <ul>
+            <li class="mask fb--mask"><a class="animsition-link" href="https://www.facebook.com/YogaKandyLLC/" target="_blank" rel="noopener"></a></li>
+            <li class="mask insta--mask"><a class="animsition-link" href="https://www.instagram.com/yogakandy/" target="_blank" rel="noopener"></a></li>
+          </ul>
+        </div><!--  sm -->
 
       </div>
-
-      <!--  sm -->
-
-      <div class="footer contact__sm">
-        <ul>
-          <li class="mask fb--mask"><a class="animsition-link" href="https://www.facebook.com/YogaKandyLLC/" target="_blank" rel="noopener"></a></li>
-          <li class="mask insta--mask"><a class="animsition-link" href="https://www.instagram.com/yogakandy/" target="_blank" rel="noopener"></a></li>
-        </ul>
-      </div><!--  sm -->
 
     </footer>
 
@@ -124,35 +133,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/animsition.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/jquery.svgmagic.js"></script>
+    <script src="js/custom.js"></script>
     <script src="js/main.js"></script>
-    <script>
 
-    $(document).ready(function() {
-  $(".animsition").animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-out',
-    inDuration: 1500,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
-});
-
-</script>
 </body>
 </html>
