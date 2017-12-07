@@ -24,6 +24,7 @@ font-family: 'Short Stack', cursive;
 
 .container {
     width: 100vw;
+    background-color: #FAFAFA;
     /*padding: 0 0.75rem;*/
 }
 
@@ -123,7 +124,7 @@ footer {
     padding: 1rem 0.5rem;
 }
 
-header {
+.backstretch {
     background-color: #db5461;
     background-image: url("../img/yoga-pose-mural.jpg");
     background-repeat: no-repeat;
@@ -139,13 +140,14 @@ header h3 {
 
                           /* about */
 .about__img,
-.classes__img {
+.classes__img,
+.title {
     text-align: center;
 }
 
-.about__section  > *,
- .classes__section  > *,
- .contact__text > * {
+.about__section > *,
+.classes__section > *,
+.contact__text > * {
     padding: 0.5rem 0;
 }
 
@@ -153,7 +155,7 @@ header h3 {
 
                                   /* classes */
 
-.classes__section {
+.classes__wrapper {
     background-color: #E3F2FD;
 }
 
@@ -260,4 +262,65 @@ header h3 {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+
+                            /* media query */
+@media screen and (min-width: 600px) {
+    .container {
+      width: 90%;
+       margin: 0 auto;
+    }
+
+    img {
+        object-fit: cover;
+        max-width: 35vw;
+        max-height: 20%;
+    }
+
+    nav ul li {
+      padding: 1.2rem 0.5rem;
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+
+    .about__section > *,
+    .classes__section  > *,
+    .contact__text > *,
+    .studio__i > *,
+    .staff__i > *{
+        padding: 0.85rem .2rem;
+  }
+
+    .about__section,
+    .classes__section,
+    .contact__section,
+    .studio__i,
+    .staff__i {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 50vh;
+        padding: 1rem 0.5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 820px) {
+    nav ul li {
+      display: inline-flex;
+      flex-direction: row;
+    }
+    .studio__i > *,
+    .staff__i > *{
+        padding: 0.85rem .4rem;
+    }
+
+
 }
