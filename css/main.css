@@ -162,14 +162,14 @@ header h3 {
 
 .classes__section button {
     padding: 0.4rem;
-    background-color: #db5461;
     font-size: 1.2rem;
+    background-color: #db5461;
     box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 
 }
 
 .classes__section button:hover {
-    color: #FFF;
+    background-color: #829eb3;
     box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
