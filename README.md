@@ -28,7 +28,7 @@
 * [SVGMagic](http://dirkgroenen.nl/SVGMagic/index.html)
   * "SVGMagic is a simple jQuery plugin that searches for SVG images (including background- and inline dataimages) on your website and creates PNG versions if the browser doesn't support SVG." I have svg images for sm icons and found this plugin!
 
-"
+
 * [Backstretch](https://github.com/jquery-backstretch/jquery-backstretch)
   * "Backstretch is a simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element. The image will stretch to fit the page/element, and will automatically resize as the window/element size changes." I used the plugin on my headers to make the background responsive.
 
@@ -40,7 +40,9 @@
 ### Notes
 * I reviewed the list of deductions for this project and in the syllabus.
 * I wanted the background opacity to change but I couldn't figure that out and settled on having the headers change.
-* I couldn't figure out how to make everything neatly appear on the page at bigger sizes, especially with the photos getting blown up despite calling a max-width and height.
+* **UPDATE: I figured it out!! I needed
+ ``` overflow:hidden;```**
+I couldn't figure out how to make everything neatly appear on the page at bigger sizes, especially with the photos getting blown up despite calling a max-width and height.
 
 
 # project_final3_jay_sadie
